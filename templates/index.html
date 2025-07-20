@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Map</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet/style.css') }}">
+</head>
+<body>
+  <h2 style="text-align: center; color: white;">Interactive Weather Map</h2>
+
+  <div id="map-container" style="text-align: center;">
+    <object id="turkey-map" type="image/svg+xml" data="{{ url_for('static', filename='images/tr.svg') }}"></object>
+    <div id="popup" class="hidden"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
